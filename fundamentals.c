@@ -43,7 +43,17 @@ void fundamentals() {
 
 
 	/* Version 2 */
-	//>> insert here
+	printf("*** Start of Measuring Strings Demo ***\n");
+	char buffer2[BUFFER_SIZE];		// new char array identical to the buffer1 found in version 1
+	do {					
+		printf("Type a string (q - to quit):\n");	// get the string to measure
+		fgets(buffer2, BUFFER_SIZE, stdin);
+		buffer2[strlen(buffer2) - 1] = '\0';		// append a null termination char again to the end of the string again
+		if (strcmp(buffer2, "q") != 0)				// if the input string was not a quit command
+			printf("The length of \'%s\' is %d characters\n",
+				buffer2, (int)strlen(buffer2));		// print the length of the string
+	} while (strcmp(buffer2, "q") != 0);			// loop until a quit command is input
+	printf("*** End of Measuring Strings Demo ***\n\n");
 
 
 	/* Version 3 */

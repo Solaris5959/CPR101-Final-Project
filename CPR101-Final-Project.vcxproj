@@ -139,6 +139,9 @@
     <ClCompile Include="manipulating.c" />
     <ClCompile Include="tokenizing.c" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="fundamentals-testing.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

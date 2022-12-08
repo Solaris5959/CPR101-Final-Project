@@ -1,0 +1,79 @@
+*** Start of Indexing Strings Demo ***
+Type not empty string (q - to quit):
+Hello World
+Type the character position whithin the string:
+4
+There character found at 4 position is 'o'
+Type not empty string (q - to quit):
+Hello World
+Type the character position whithin the string:
+10
+There character found at 10 position is 'd'
+Type not empty string (q - to quit):
+Hello World
+Type the character position whithin the string:
+11
+Too big... Position reduced to max. availbale
+There character found at 10 position is 'd'
+Type not empty string (q - to quit):
+Hello World
+Type the character position whithin the string:
+-1
+Too big... Position reduced to max. availbale
+There character found at 10 position is 'd'
+Type not empty string (q - to quit):
+Hello World
+Type the character position whithin the string:
+
+There character found at 0 position is 'H'
+Type not empty string (q - to quit):
+Hello World
+Type the character position whithin the string:
+abc
+There character found at 0 position is 'H'
+Type not empty string (q - to quit):
+abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+Type the character position whithin the string:
+There character found at 0 position is 'a'
+Type not empty string (q - to quit):
+Type the character position whithin the string:
+81
+Too big... Position reduced to max. availbale
+There character found at 41 position is 'z'
+Type not empty string (q - to quit):
+Hello World
+Type the character position whithin the string:
+12345678901
+Too big... Position reduced to max. availbale
+There character found at 10 position is 'd'
+Type not empty string (q - to quit):
+Type the character position whithin the string:
+0
+There character found at 0 position is '0'
+Type not empty string (q - to quit):
+Q
+Type the character position whithin the string:
+q
+There character found at 0 position is 'Q'
+Type not empty string (q - to quit):
+q
+*** End of Indexing Strings Demo ***
+
+*** Start of Measuring Strings Demo ***
+Type a string (q - to quit):
+Hello World
+The length of 'Hello World' is 11 characters
+Type a string (q - to quit):
+
+The length of '' is 0 characters
+Type a string (q - to quit):
+1234567890123456789023456789012345678901234567890123456789012345678901234567890
+The length of '123456789012345678902345678901234567890123456789012345678901234567890123456789' is 78 characters
+Type a string (q - to quit):
+The length of '' is 0 characters
+Type a string (q - to quit):
+Q
+The length of 'Q' is 1 characters
+Type a string (q - to quit):
+q
+*** End of Measuring Strings Demo ***
