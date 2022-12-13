@@ -37,8 +37,23 @@ int main(void) {
 			}
 		} while (strcmp(doubleString, "q") != 0);		// do the transfer until string equal to "q"
 		printf("*** End of Converting Strings to double Demo ***inin");		// print final sentence
-	}
+	
 /* Version 3 */
+		printf("*** Start of Converting Strings to long Demo ***\n");
+		char longString[BUFFER_SIZE];  //create virable to storage user input
+		long longNumber;  //creat virable to output the result
+		do {
+			printf("Type the long numeric string (q - to quit):\n");
+			fgets(longString, BUFFER_SIZE, stdin);    //get user input
+			longString[strlen(longString) - 1] = '\0';   //make sure char string end with '\0'
+			if ((strcmp(longString, "q") != 0)) {    //compare two string,when string not equal to "q" transfer the char to int
+				longNumber = atol(longString);       //transfer char to long, if the result is invalid return 0
+				printf("Converted number is %ld\n", longNumber);   //print out the result
+			}
+			} while (strcmp(longString, "q") != 0);    // do the transfer until string equal to "q"
+			printf("*** End of Converting Strings to long Demo ***\n\n");    // print final sentence
+	
+	}
 
 
 
