@@ -57,7 +57,19 @@ void fundamentals() {
 
 
 	/* Version 3 */
-	//>> insert here
-
-
+	printf("*** Start of Copying Strings Demo ***\n");
+	char destination[BUFFER_SIZE];	// new char array of size BUFFER_SIZE to hold the copy of the string
+	char source[BUFFER_SIZE];		// new char array of size BUFFER_SIZE to get the original version of the string
+	do {
+		destination[0] = '\0';		// set the first index of the destination string to a null terminator - this means the string has functionally no value
+		printf("Destination string is reset to empty\n");
+		printf("Type the source string (q - to quit):\n");
+		fgets(source, BUFFER_SIZE, stdin);	// get the new string to be copied and store in the 'source' string
+		source[strlen(source) - 1] = '\0';	// overwrite the last char in the string with a null terminator
+		if (strcmp(source, "q") != 0) {		// if the input string is not "q" indicating a quit
+			strcpy(destination, source);	// copy the string from 'source' to 'destination'
+			printf("New destination string is \'%s\'\n", destination);	// print the string stored in 'destination'
+		}
+	} while (strcmp(source, "q") != 0);	// iterate until the input string is "q" (quit)
+	printf("*** End of Copying Strings Demo ***\n\n");
 }
